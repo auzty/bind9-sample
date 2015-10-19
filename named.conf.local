@@ -1,0 +1,20 @@
+/
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+
+// location of main zone configuration
+zone "jajal.com" {
+        type master;
+        file "/etc/bind/zones/jajal.com.db";
+};
+
+// location of reverse zone configuration
+zone "1.16.172.in-addr.arpa" {
+        type master;
+        file "/etc/bind/zones/rev.1.16.172.in-addr.arpa";
+};

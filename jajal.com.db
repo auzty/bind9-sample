@@ -1,0 +1,13 @@
+; BIND data file for jajal.com
+;
+$TTL 14400
+@ IN SOA jajal.com. root.jajal.com. (
+    201006601 ; Serial
+    7200 ; Refresh
+    120 ; Retry
+    2419200 ; Expire
+    604800) ; Default TTL
+;
+
+@ IN NS jajal.com.
+jajal.com. IN A 172.16.1.33
